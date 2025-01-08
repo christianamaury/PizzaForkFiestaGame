@@ -53,6 +53,9 @@ public class GameM : MonoBehaviour
 
     private void Awake()
     {
+        //Running game at 60 FPS;
+        Application.targetFrameRate = 60;
+
         Instance = this;
 
         //Disabling Game Instructions for now;

@@ -93,6 +93,9 @@ public class GameController : MonoBehaviour
                 rb.bodyType = RigidbodyType2D.Dynamic;
                 rb.velocity = Vector2.zero;
                 rb.gravityScale = 1;
+
+                //Removing the Constraints; TESTING*
+                rb.constraints = RigidbodyConstraints2D.None;
             }
  
             //Wait one second before destroying the Forks;
